@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+    width: 100%;
+    font-size: 20px;
+}
+
+nav {
+    margin: 3rem 22rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+main {
+    margin: 3rem 22rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 40px;
+}
+
+.card-1 {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-sizing: border-box;
+}
+
+.card-2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 24px;
+}
+
+button {
+    background: hsl(0, 0%, 95%);
+    margin-top: 80px;
+    padding: 15px 36px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover, button:active {
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(31, 77%, 52%);
+}
+
+.btn-1:hover, .btn-1:active {
+    background: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(184, 100%, 22%);
+}
+
+.btn-2:hover, .btn-2:active {
+    background: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(179, 100%, 13%);
+}
+
+.btn-3:hover, .btn-3:active {
+    background: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 375px) {
+    nav, main {
+        margin: 3rem 1rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .card-1 {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card-3 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+}
